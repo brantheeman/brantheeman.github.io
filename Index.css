@@ -2,5 +2,7 @@ h1{
     color: red;
 }
 #profile{
-    border-radius: 100%;
+    border-radius: 50%;
+    display: flexbox;
+    flex-shrink: inherit;
 }
