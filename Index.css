@@ -9,3 +9,7 @@ h1{
             flex-wrap: wrap;
             word-wrap: normal;         
 }
+.floating{
+    border: 0ch;
+    box-shadow: 0ch;
+}
