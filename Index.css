@@ -2,10 +2,11 @@ h1{
     color: red;
 }
 #profile{
+    border-radius: 50%;
     display: -webkit-flex;
             -webkit-flex-wrap: wrap;
             display: flex;
             flex-wrap: wrap;
             word-wrap: normal;
-            border-radius: 50%;
+            
 }
