@@ -1,4 +1,4 @@
-h1{
+  h1{
     color: black;
     text-shadow: 3px 3px 3px;
 }
@@ -11,6 +11,6 @@ h1{
             word-wrap: normal;         
 }
 .floating{
-    border: 0ch;
-    box-shadow: 0ch;
+    display: flexbox;
+    align-items: center;
 }
