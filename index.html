@@ -20,11 +20,72 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 <header>
     <h1>Brandan Pratt</h1>
 
-    <img id="profile" title="profile-picture" src="/Twitter profile.jpg">
+    <img class="rounded-circle" title="profile-picture" src="C:\Users\brand\OneDrive\Documents\GitHub\cv-resume\Resume\Twitter profile.jpg">
 
+    <script>
+        var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+    </script>
     
 
-    <p>I am a Software Engineer.</p>
+    <p>I am a <span
+        class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "Software Engineer.", "Web Developer.", "Lifelong learner."]'></span></p>
 </header>
     <p>I am currently pursuing my Associates Degree at The Bahamas Technical and Vocational Institution.
         I am also a part-time software developer at Bahamas First General Insurance. I chose to be a programmer
@@ -33,18 +94,21 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 
         <div class="floating"> 
             <h2>Education:</h2>
-            <h3>Bahamas Technical & Vocational Institution(August 2019 - May 2023)</h3>
-
-            
-            
-
+            <h3>Bahamas Technical & Vocational Institution(August 2020 - May 2023)</h3>
+            <h4>Associates of Software Engineering</h4>
+            <br>
+            <h3>Synergy Bahamas(January 2020 - May 2020)</h3>
+            <h4>Software Development Fundamentals Course</h4>
+            <br>
+            <h3>Nassau Christian Academy(August 2004 - May 2016)</h3>
+            <h4>Highschool Diploma</h4>
         </div>
-
+<br>
         <h4>Certifications:</h4>
         <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2437a9ea-38eb-4b83-8fc6-facef15dd3f5" data-share-badge-host="https://www.credly.com"></div>
 
 
-
+<br>
    <div class="floating"> 
     <h2>Programming Languages:</h2>
     <ul>
@@ -89,7 +153,10 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
     <h2>Contact</h2>
     <address>
         <a href="mailto:brandan.pratt1@gmail.com">brandan.pratt1@gmail.com</a><br>
-        <a href="tel:+12428253991">+1(242)825-3991</a>
+        <a href="tel:+12428253991">+1(242)825-3991</a><br>
+        <a href="https://twitter.com/JCrimsxn">My Twitter</a><br>
+        <a href="https://github.com/brantheeman">My Github</a><br>
+        <a href="https://www.linkedin.com/in/brandan-p-267549114/">My LinkedIn</a>
     </address>
     
 </body>
