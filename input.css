@@ -469,5 +469,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 h1 {
-  color: purple;
+  color:rgb(59 130 246 / 0.5);
+  font-size: xx-large;
 }
