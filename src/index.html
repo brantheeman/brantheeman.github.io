@@ -7,11 +7,24 @@
     <title>Brandan Pratt</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg">
 <header>
-    <h1 class="text-3xl font-bold underline">Brandan Pratt</h1>
+    <!-- <h1 class="text-center text-cyan-600 font-serif text-5xl">Brandan Pratt</h1> -->
 
-    <img class="profile" title="profile-picture" src="Twitter profile.jpg">
+    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/src/Twitter profile.jpg" alt="Woman's Face">
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-lg text-black font-semibold">
+            Brandan Pratt
+          </p>
+          <p class="text-slate-500 font-medium">
+            Software Engineer
+          </p>
+        </div>
+        <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Download Resume</button>
+      </div>
+    </div>
 
     <script>
         var TxtRotate = function(el, toRotate, period) {
@@ -78,6 +91,7 @@ window.onload = function() {
         data-period="2000"
         data-rotate='[ "Software Engineer.", "Web Developer.", "Lifelong learner.", "Gamer."]'></span></p>
 </header>
+
     <p>I am currently pursuing my Associates Degree at The Bahamas Technical and Vocational Institution.
         I am also a part-time software developer at Bahamas First General Insurance. I chose to be a programmer
         because of my love for videogames, and that its a challenging career where you get to build, and constantly
@@ -150,6 +164,5 @@ window.onload = function() {
         <a href="https://github.com/brantheeman">My Github</a><br>
         <a href="https://www.linkedin.com/in/brandan-p-267549114/">My LinkedIn</a>
     </address>
-    
 </body>
 </html>
