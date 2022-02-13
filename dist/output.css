@@ -631,7 +631,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-cyan-600 {
-  --tw-text-opacity: 1;
+  --tw-text-opacity: 100;
   color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 

@@ -7,98 +7,35 @@
     <title>Brandan Pratt</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg">
-<header>
-    <!-- <h1 class="text-center text-cyan-600 font-serif text-5xl">Brandan Pratt</h1> -->
 
-    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-      <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/src/Twitter profile.jpg" alt="Woman's Face">
-      <div class="text-center space-y-2 sm:text-left">
+<body>
+
+    <!-- <h1 class="text-center text-cyan-600 font-serif text-5xl">Brandan Pratt</h1> -->
+    <iframe src='https://my.spline.design/calculatorcopy-6b3c3a722adb5e63f1c5d3ed5e54dd8c/' frameborder='0' width='100%' height='100%'></iframe>
+    <div class=" py-8 px-8 max-w-sm mx-auto shadow-lg bg-white rounded-xl space-y-2 sm:py-5 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/src/Twitter profile.jpg" alt="Brandan">
+      <div class="text-center space-y-2 sm:text-left ">
         <div class="space-y-0.5">
-          <p class="text-lg text-black font-semibold">
+          <p class="text-xl font-semibold font-sans">
             Brandan Pratt
           </p>
-          <p class="text-slate-500 font-medium">
+          <p class="text-blu font-medium">
             Software Engineer/Web Developer
           </p>
+          <br>
+          <p class="text-justify font-serif text-amber-400">I am currently pursuing my Associates Degree at The Bahamas Technical and Vocational Institution.
+            I am also a part-time software developer at Bahamas First General Insurance.</p>
         </div>
-        <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Download Resume</button>
+        <button class="px-4 py-1 text-sm text-black font-semibold rounded-full border border-purple-500 hover:text-amber-400 hover:bg-amber-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2">Download Resume</button>
       </div>
     </div>
 
-    <script>
-        var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
-    </script>
-    
-
-    <p>I am a <span
-        class="txt-rotate"
-        data-period="2000"
-        data-rotate='[ "Software Engineer.", "Web Developer.", "Lifelong learner.", "Gamer."]'></span></p>
-</header>
-
-    <p>I am currently pursuing my Associates Degree at The Bahamas Technical and Vocational Institution.
-        I am also a part-time software developer at Bahamas First General Insurance. I chose to be a programmer
-        because of my love for videogames, and that its a challenging career where you get to build, and constantly
-        learn. As time goes on I will be adding more to my website/portfolio.</p>
 <br>
-        <div class="floating"> 
-            <h2>Education:</h2>
+        <div class="font-serif py-8 px-8 max-w-sm mx-auto bg-white shadow-lg rounded-xl space-y-2 sm:py-5 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"> 
+          <div class="text-center space-y-2 sm:text-left">
+            <div class="space-y-0.5"></div>
+            <h2 class="text-lg text-black font-semibold">Education:</h2>
             <h3>Bahamas Technical & Vocational Institution(August 2020 - May 2023)</h3>
             <h4>Associates of Software Engineering</h4>
             <br>
@@ -107,8 +44,12 @@ window.onload = function() {
             <br>
             <h3>Nassau Christian Academy(August 2004 - May 2016)</h3>
             <h4>Highschool Diploma</h4>
+          </div>
+          </div>
         </div>
 <br>
+
+<!--
         <h4>Certifications:</h4>
         <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2437a9ea-38eb-4b83-8fc6-facef15dd3f5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 <br>
@@ -163,6 +104,6 @@ window.onload = function() {
         <a href="https://twitter.com/JCrimsxn">My Twitter</a><br>
         <a href="https://github.com/brantheeman">My Github</a><br>
         <a href="https://www.linkedin.com/in/brandan-p-267549114/">My LinkedIn</a>
-    </address>
+    </address>-->
 </body>
 </html>
