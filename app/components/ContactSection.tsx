@@ -23,7 +23,7 @@ export default function ContactSection() {
 							/>
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 						</svg>
-						<span>Bahamas</span>
+						<span>The Bahamas</span>
 					</div>
 
 					{/* Contact Buttons */}
@@ -78,7 +78,7 @@ export default function ContactSection() {
 							</svg>
 						</a>
 						<a
-							href="https://twitter.com/JCrimsxn"
+							href="https://twitter.com/brxn94"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"
