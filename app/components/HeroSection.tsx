@@ -24,15 +24,20 @@ export default function HeroSection() {
 						</p>
 						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
 							Currently building modern web applications with{' '}
-							<span className="text-blue-400">React</span> and <span className="text-purple-400">Next.js</span>
+							<span className="text-cyan-400">React</span> , 
+							<span className="text-red-400"> Laravel</span> ,
+							<span className="text-yellow-400"> Python</span> and
+							<span className="text-cyan-400"> Go</span> , and deploying them on 
+							<span className="text-orange-400"> AWS</span> for scalable and reliable performance.	
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
 						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">TypeScript</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">React & Next.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-500/10 rounded-full text-teal-400 text-xs md:text-sm">Node.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/10 rounded-full text-blue-400 text-xs md:text-sm">Python</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-500/10 rounded-full text-purple-400 text-xs md:text-sm">AWS</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-cyan-500/10 rounded-full text-cyan-400 text-xs md:text-sm">React</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-500/10 rounded-full text-red-400 text-xs md:text-sm">Laravel</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/10 rounded-full text-yellow-400 text-xs md:text-sm">Python</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-cyan-500/10 rounded-full text-cyan-400 text-xs md:text-sm">Go</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-orange-500/10 rounded-full text-orange-400 text-xs md:text-sm">AWS</span>
 					</div>
 				</motion.div>
 
