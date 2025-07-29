@@ -37,9 +37,9 @@ const skills = [
 
 const stats = [
   { label: "Years Experience", value: "4+" },
-  { label: "Projects Completed", value: "50+" },
+  { label: "Projects Completed", value: "12+" },
   { label: "Technologies Mastered", value: "15+" },
-  { label: "Happy Clients", value: "25+" },
+  { label: "Happy Clients", value: "6+" },
 ];
 
 export default function AboutSection() {
