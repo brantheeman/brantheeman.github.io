@@ -18,7 +18,7 @@ export default function HeroSection() {
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
 							Brandan Pratt
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-white">Software Engineer/Web Developer</h2>
+						<h2 className="text-2xl md:text-4xl font-bold text-white">Software Engineer</h2>
 						<p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
 							Passionate about creating innovative web solutions and building user-friendly applications that make a difference.
 						</p>
